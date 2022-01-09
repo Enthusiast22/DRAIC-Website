@@ -24,19 +24,7 @@
     box-sizing: border-box;
   }
   
-  /* Remove default margin */
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  figure,
-  blockquote,
-  dl,
-  dd {
-    margin: 0;
-  }
+ 
   
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
   ul[role="list"],
@@ -62,11 +50,11 @@
   }
   
   /* Make images easier to work with */
-  img,
+  /* img,
   picture {
     max-width: 100%;
     display: block;
-  }
+  } */
   
   /* Inherit fonts for inputs and buttons */
   input,
@@ -93,6 +81,7 @@
   }
   
   body {
+    margin:auto;
     display: grid;
     place-content: center;
     min-height: 100vh;
@@ -100,14 +89,10 @@
     font-family: var(--ff-primary);
     font-weight: var(--fw-400);
   
-    background-color: white;
+    background-color: black;
   }
   
-  h1,
-  h2,
-  h3 {
-    font-weight: var(--fw-700);
-  }
+  
   
   /* utilities */
   .flex {
@@ -132,6 +117,10 @@
   .bg-neutral-100 {
     background: hsl(var(--clr-neutral-100));
   }
+
+  .bg-black{
+    background: black;
+  }
   
   .text-neutral-100 {
     color: hsl(var(--clr-neutral-100));
@@ -140,7 +129,7 @@
     color: hsl(var(--clr-secondary-400));
   }
   .border-primary-400 {
-    border: 2px solid #a775f1;
+    border: 3px solid #38eaf7;
   }
   
   /* components */
@@ -191,15 +180,23 @@
   }
   
   .testimonial .name {
-    font-size: var(--fs-400);
+    font-size: 25px;
     font-weight: var(--fw-400);
     line-height: 1;
   }
-  
-  .testimonial .position {
-    font-size: var(--fs-300);
+  .position{
+    font-size: 15px;
     opacity: 0.5;
   }
+
+  .dept-name{
+    font-size: 20px;
+    line-height: 1;
+  }
+  /* .testimonial .position {
+    font-size: var(--fs-300);
+    
+  } */
   
   .testimonial > p:first-of-type {
     font-size: var(--fs-500);
@@ -210,9 +207,32 @@
     opacity: 0.7;
   }
  
+.about-title{
+  margin-top: 50px;
+  padding-left: 15px;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    font-weight: var(--fw-400);
+}
+.about-text{
+  font-size: 30px;
+    font-weight: var(--fw-400);
+    line-height: 1;
+    padding: 20px 20px 20px 20px;
+    color: white;
+}
+
+
+
+
   .dept-title{
-      font-size: 20px;
-      color:black;
+    margin-top: 50px;
+    padding-left: 15px;
+      font-size: 50px;
+      color:white;
+      text-align: center;
+      font-weight: var(--fw-400);
   }
   .dept-grid{
       display: grid;
@@ -220,5 +240,20 @@
       padding-block: 2rem;
       width: min(95%, 70rem);
       margin-inline: auto;
+      
       grid-template-columns: 1fr 1fr 1fr ;
+      
   }
+   .dept-grid-box{
+    padding: 2rem;
+    border-radius: 0.8rem;
+    border-style: solid 4px;
+    border-color: rgb(89, 233, 238);
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+   }
+   
+   .dept-content{
+     font-size: 15px;
+     padding: 15px 15px 15px 15px;
+   }
+
