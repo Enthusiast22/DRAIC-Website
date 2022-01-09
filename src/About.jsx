@@ -1,7 +1,16 @@
 
   
 import React from "react";
-import "./About.css";
+import "./about.css";
+import flag from "./imgs/flag.png"
+import heart from "./imgs/heart.png"
+import star from "./imgs/star.png"
+import mech from "./imgs/mech.png"
+import programming from "./imgs/programming.png"
+import electrical from "./imgs/electrical.png"
+
+
+
 
 
 
@@ -12,18 +21,16 @@ function About(){
   
   
   <div className="aboutmain">
-    <div className="about-title"><p>About us</p></div>
-    <div className="about-text"><p> I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
-          transition and have heard some people who had an amazing experience here. I signed up
-          for the free intro course and found it incredibly fun!</p></div>
+    <div className="about-title"><p>Who we are and <br></br> why we are doing this</p></div>
+    <div className="about-text"><p> Who vdsv vesv vv svv  gvavavgvverv xcvxvvxvxv <br></br> lkvjbv vvfv fadv z zdavearvhv'pih</p></div>
     <div className="testimonial-grid">
       <article className="testimonial flow bg-secondary-400 text-neutral-100 ">
         <div className="flex">
           <div>
-            <img  src="./images/image-daniel.jpg" alt=""/>
+            <img  src={flag} alt=""/>
           </div>
           <div>
-            <h2 className="name">Daniel Clifford</h2>
+            <h2 className="name">Who are we</h2>
             
           </div>
         </div>
@@ -37,10 +44,10 @@ function About(){
       <article className="testimonial flow bg-secondary-400 text-neutral-100">
         <div className="flex">
           <div>
-            <img src="./images/image-jonathan.jpg" alt=" "/>
+            <img src={star} alt=" "/>
           </div>
           <div>
-            <h2 className="name">Jonathan Walters</h2>
+            <h2 className="name">Mission</h2>
             
           </div>
         </div>
@@ -56,10 +63,10 @@ function About(){
        <article className="testimonial grid-col-span-2 flow bg-secondary-400 text-neutral-100">
         <div className="flex">
           <div>
-            <img src="./images/image-jeanette.jpg" alt=""/>
+            <img src={heart} alt=""/>
           </div>
           <div>
-            <h2 className="name">Jeanette Harmon</h2>
+            <h2 className="name">Vision</h2>
             
           </div>
         </div>
@@ -76,8 +83,8 @@ function About(){
         <div className="flex">
           
           <div>
-            <h2 className="name">Patrick Abrams</h2>
-            <p className="position">Verified Graduate</p>
+            <h2 className="name">Members</h2>
+            {/* <p className="position">Verified Graduate</p> */}
           </div>
         </div>
         
@@ -86,8 +93,8 @@ function About(){
         <div className="flex">
         
           <div>
-            <h2 className="name">Kira Whittle</h2>
-            <p className="position">Verified Graduate</p>
+            <h2 className="name">Alumni</h2>
+            {/* <p className="position">Verified Graduate</p> */}
           </div>
         </div>
        
@@ -98,8 +105,8 @@ function About(){
         <div className="flex">
           
           <div>
-            <h2 className="name">Patrick Abrams</h2>
-            <p className="position">Verified Graduate</p>
+            <h2 className="name">Projects</h2>
+            {/* <p className="position">Verified Graduate</p> */}
           </div>
         </div>
        
@@ -109,8 +116,8 @@ function About(){
         <div className="flex">
         
           <div>
-            <h2 className="name">Kira Whittle</h2>
-            <p className="position">Verified Graduate</p>
+            <h2 className="name">Achievements</h2>
+            {/* <p className="position">Verified Graduate</p> */}
           </div>
         </div>
     
@@ -124,7 +131,7 @@ function About(){
         <article className="dept-grid-box flow bg-black text-neutral-100 border-primary-400">
         
           <div>
-          <img  src=" ./images/image-jeanette.jpg" />
+          <img className="dept-img" src={programming} alt="Programming Department" />
           <p className="dept-name">Programming Department</p>
           </div>
           
@@ -139,8 +146,8 @@ function About(){
       <article className="dept-grid-box flow bg-black text-neutral-100 border-primary-400">
         
         <div>
-        <img  src=" ./images/image-jeanette.jpg" />
-          <p className="dept-name">Programming Department</p>
+        <img className="dept-img" src={mech} alt=""/>
+          <p className="dept-name">Mechanical Department</p>
         </div>
        
         <div className="dept-content">
@@ -154,8 +161,8 @@ function About(){
     <article className="dept-grid-box flow bg-black text-neutral-100 border-primary-400">
         
         <div>
-          <img  src=" ./images/image-jeanette.jpg" />
-          <p className="dept-name">Programming Department</p>
+          <img className="dept-img" src={electrical} alt="" />
+          <p className="dept-name">Electrical Department</p>
         </div>
         <div className="dept-content">
         <p>
