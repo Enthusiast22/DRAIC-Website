@@ -1,5 +1,3 @@
-
-  
 import React from "react";
 import "./about.css";
 import flag from "./imgs/flag.png"
@@ -17,8 +15,6 @@ import electrical from "./imgs/electrical.png"
 function About(){ 
     return (
     <>
-  
-  
   
   <div className="aboutmain">
     <div className="about-title"><p>Who we are and <br></br> why we are doing this</p></div>
@@ -83,17 +79,18 @@ function About(){
         <div className="flex">
           
           <div>
-            <h2 className="name">Members</h2>
-            {/* <p className="position">Verified Graduate</p> */}
+            <h2 className="name"><strong>50+</strong></h2>
+            <p className="subscript">Members</p>
           </div>
         </div>
         
       </article>
-      <article className="testimonial flow bg-secondary-400 text-neutral-100">
+      <article className="testimonial flow bg-secondary-500 text-neutral-100">
         <div className="flex">
         
           <div>
-            <h2 className="name">Alumni</h2>
+            <h2 className="name"><strong>50+</strong></h2>
+            <p className="subscript">Alumni</p>
             {/* <p className="position">Verified Graduate</p> */}
           </div>
         </div>
@@ -105,18 +102,20 @@ function About(){
         <div className="flex">
           
           <div>
-            <h2 className="name">Projects</h2>
+            <h2 className="name"><strong>50+</strong></h2>
+            <p className="subscript">Projects</p>
             {/* <p className="position">Verified Graduate</p> */}
           </div>
         </div>
        
        
       </article>
-      <article className="testimonial flow bg-secondary-400 text-neutral-100">
+      <article className="testimonial flow bg-secondary-500 text-neutral-100">
         <div className="flex">
         
           <div>
-            <h2 className="name">Achievements</h2>
+          <h2 className="name"><strong>50+</strong></h2>
+          <p className="subscript">Achievements</p>
             {/* <p className="position">Verified Graduate</p> */}
           </div>
         </div>
@@ -187,5 +186,3 @@ function About(){
 
 
 export default About
-
-
