@@ -137,17 +137,17 @@ body {
     grid-row:span 2
 }
 .aboutmain{
-    display: grid;
-    gap:2em;
+  display: grid;
+  gap:2em;
   padding-block: 2rem;
   width: min(95%, 70rem);
   margin-inline: auto;
 }
 
 .testimonial-grid {
-    display:grid;
-    column-gap: 2em;
-    grid-template-columns: 1fr 1fr;
+  display:grid;
+  column-gap: 2em;
+  grid-template-columns: 1fr 1fr;
 
 }
 
@@ -181,20 +181,25 @@ body {
 
 .testimonial .name {
   margin-top: 2%;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: var(--fw-400);
   line-height: 1;
 }
 .position{
-  font-size: 15px;
+  font-size: 25px;
+  opacity: 0.5;
+}
+.subscript{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(44, 189, 51);
+  font-size: 30px;
   opacity: 0.5;
 }
 
 
-/* .testimonial .position {
+.testimonial .position {
   font-size: var(--fs-300);
-  
-} */
+}
 
 .testimonial > p:first-of-type {
   font-size: var(--fs-500);
@@ -248,14 +253,15 @@ color: white;
   grid-template-columns: 1fr 1fr 1fr ;
     
 }
- .dept-grid-box{
+.dept-grid-box{
   block-size: 300px;
   padding: 2rem;
   border-radius: 1.2rem;
   border-style: solid 4px;
   border-color: rgb(89, 233, 238);
   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
- }
+}
+
  
 .dept-content{
   font-size: 15px;
@@ -264,4 +270,9 @@ color: white;
 .dept-img{
   margin: 0px;
   max-width: 40px;
+}
+.dept-grid-box:hover {
+  transform: translateY(-0.9%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  border-color: white;
 }
